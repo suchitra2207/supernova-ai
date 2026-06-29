@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Report | Supernova AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="report">
+
+    <h1>✨ Your AI Career Report</h1>
+
+    <div class="result-card">
+        <h2>Career Match Score</h2>
+        <p id="score">Loading...</p>
+    </div>
+
+    <div class="result-card">
+        <h2>Top Career</h2>
+        <p id="career">Loading...</p>
+    </div>
+
+    <div class="result-card">
+        <h2>Why this Career?</h2>
+        <p id="why">Loading...</p>
+    </div>
+
+    <div class="result-card">
+        <h2>Skills to Develop</h2>
+        <ul id="skills"></ul>
+    </div>
+
+    <div class="result-card">
+        <h2>Learning Roadmap</h2>
+        <ul id="roadmap"></ul>
+    </div>
+
+    <div class="result-card">
+        <h2>Recommended Certifications</h2>
+        <ul id="certifications"></ul>
+    </div>
+
+    <a href="profile.html" class="btn">← Generate Another Report</a>
+
+</div>
+
+<script>
+
+const report = JSON.parse(
+    localStorage.getItem("careerReport")
+);
+
+if(report){
+
+    document.getElementById("score").innerText =
+        report.careerMatchScore || "N/A";
+
+    document.getElementById("career").innerText =
+        report.topCareer || "N/A";
+
+    document.getElementById("why").innerText =
+        report.why || "N/A";
+
+    const skills = document.getElementById("skills");
+
+    report.skillsToDevelop?.forEach(skill => {
+
+        const li = document.createElement("li");
+
+        li.innerText = skill;
+
+        skills.appendChild(li);
+
+    });
+
+    const roadmap = document.getElementById("roadmap");
+
+    report.roadmap?.forEach(step => {
+
+        const li = document.createElement("li");
+
+        li.innerText = step;
+
+        roadmap.appendChild(li);
+
+    });
+
+    const certifications = document.getElementById("certifications");
+
+    report.certifications?.forEach(cert => {
+
+        const li = document.createElement("li");
+
+        li.innerText = cert;
+
+        certifications.appendChild(li);
+
+    });
+
+}
+else{
+
+    alert("No report found. Please generate a career report first.");
+
+    window.location.href = "profile.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f8fafc;
+
+    color:#222;
+
+}
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:25px 80px;
+
+}
+
+.logo{
+
+    width:55px;
+
+}
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:70px 80px;
+
+}
+
+.hero-text{
+
+    width:55%;
+
+}
+
+.hero-text h1{
+
+    font-size:58px;
+
+    line-height:1.2;
+
+}
+
+.hero-text span{
+
+    color:#7c3aed;
+
+}
+
+.hero-text p{
+
+    margin-top:25px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#ff7a00;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 32px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:#ea580c;
+
+}
+
+.hero-image{
+
+    font-size:120px;
+
+}
+
+.features{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:40px 80px 80px;
+
+}
+
+.card{
+
+    background:white;
+
+    width:300px;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+    margin:20px 0;
+
+}
+.form-container{
+
+    width:700px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.form-container h1{
+
+    margin-bottom:10px;
+
+}
+
+.form-container p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+input,
+select{
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+form .btn{
+
+    text-align:center;
+
+}
+.report{
+
+    width:900px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.score{
+
+    margin:40px 0;
+
+    text-align:center;
+
+}
+
+.circle{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    background:#7c3aed;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    font-size:40px;
+
+    font-weight:700;
+
+}
+
+.section{
+
+    margin-top:40px;
+
+}
+
+.section h2{
+
+    color:#7c3aed;
+
+    margin-bottom:15px;
+
+}
+
+.section ul{
+
+    margin-left:25px;
+
+    line-height:2;
+
+}
+.report{
+    max-width:900px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.report h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.result-card{
+    background:#fff;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.result-card h2{
+    color:#6C4CF1;
+    margin-bottom:10px;
+}
+
+.result-card p{
+    line-height:1.7;
+    white-space:pre-wrap;
+}
+.result-card ul{
+
+    margin-left:20px;
+
+    line-height:2;
+
+}
+
+.result-card li{
+
+    color:#444;
+
+}

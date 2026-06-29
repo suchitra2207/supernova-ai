@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Supernova AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Tell us about yourself 👋</h1>
+
+        <p>
+            Help Supernova AI understand your interests, skills, and aspirations to generate personalized career recommendations.
+        </p>
+
+        <form id="careerForm">
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Full Name"
+                required>
+
+            <select
+                id="education"
+                required>
+
+                <option value="">Select Education</option>
+                <option>High School</option>
+                <option>Undergraduate</option>
+                <option>Postgraduate</option>
+                <option>Working Professional</option>
+
+            </select>
+
+            <input
+                id="field"
+                type="text"
+                placeholder="Field of Study"
+                required>
+
+            <input
+                id="interests"
+                type="text"
+                placeholder="Interests (Example: AI, Design, Business)"
+                required>
+
+            <input
+                id="skills"
+                type="text"
+                placeholder="Skills (Example: Python, Communication, SQL)"
+                required>
+
+            <input
+                id="goal"
+                type="text"
+                placeholder="Dream Career (Optional)">
+
+            <button
+                type="submit"
+                id="generateBtn"
+                class="btn">
+
+                🚀 Generate My Career Plan
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
