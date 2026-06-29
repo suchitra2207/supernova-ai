@@ -19,8 +19,8 @@ const ai = new GoogleGenAI({
 });
 
 // Health Check
-app.get("/", (req, res) => {
-    res.send("🚀 Supernova AI Backend is running.");
+app.get("/health", (req, res) => {
+    res.status(200).send("OK");
 });
 
 // Generate Career Report
